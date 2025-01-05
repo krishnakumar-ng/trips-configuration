@@ -6,3 +6,25 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+
+services:
+  booking-service:
+    id: BOOKING-SERVICE
+    v1:
+      api: /api/v1/booking-service
+      name: BOOKING-SERVICE_V1
+      port: 8081
+
+  bus-service:
+    id: BUS-SERVICE
+    v1:
+      api: /api/v1/bus-service
+      name: BUS-SERVICE_V1
+      port: 8082
+
+  payment-service:
+    id: PAYMENT-SERVICE
+    v1:
+      api: /api/v1/payment-service
+      name: PAYMENT-SERVICE_V1
+      port: 8083
