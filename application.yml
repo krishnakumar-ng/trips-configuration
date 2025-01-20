@@ -13,7 +13,7 @@ services:
     v1:
       api: /api/v1/auth
       name: AUTH-SERVER_V1
-      port: 8085
+      port: 8090
 
   booking-service:
     id: BOOKING-SERVICE
